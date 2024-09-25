@@ -9,13 +9,34 @@
   </head>
   <body>
     <div class="w-full min-h-screen bg-zinc-900 p-5 text-white">
-        <h3 class="my-3">Login</h3>
-      <form action="/login" method="POST">
+        <h3 class="my-3">Create Account</h3>
+      <form action="/register" method="POST">
+        <input
+          class="p-3 rounded-md outline-none border border-zinc-700 bg-transparent"
+          type="text"
+          name="username"
+          placeholder="username"
+          required
+        />
+        <input
+          class="p-3 rounded-md outline-none border border-zinc-700 bg-transparent"
+          type="text"
+          name="name"
+          placeholder="name"
+          required
+        />
         <input
           class="p-3 rounded-md outline-none border border-zinc-700 bg-transparent"
           type="email"
           name="email"
           placeholder="email"
+          required
+        />
+        <input
+          class="p-3 rounded-md outline-none border border-zinc-700 bg-transparent"
+          type="number"
+          name="age"
+          placeholder="age"
           required
         />
         <input
